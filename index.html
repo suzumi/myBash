@@ -10,6 +10,9 @@
 			.u-mb20 {
 				margin-bottom: 20px;
 			}
+			.gbl-nav {
+				background-color: #444444;
+			}
 			.sub-title {
 				font-size: 20px;
 				border-bottom: 1px solid #ccc;
@@ -17,16 +20,19 @@
 		</style>
     </head>
     <body>
-        <nav class="u-mb20">
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#!">エアコン</a></li>
-                <li><a href="#!">他のなんか</a></li>
-            </ul>
-            <ul id="slide-out" class="side-nav">
-                <li><a href="#!">エアコン</a></li>
-                <li><a href="#!">他のなんか</a></li>
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <nav class="gbl-nav u-mb20">
+			<div class="nav-wrapper">
+      			<a href="#" class="brand-logo center">うちコン</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#!">エアコン</a></li>
+					<li><a href="#!">他のなんか</a></li>
+				</ul>
+				<ul id="slide-out" class="side-nav">
+					<li><a href="#!">エアコン</a></li>
+					<li><a href="#!">他のなんか</a></li>
+				</ul>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+			</div>
         </nav>
         <div class="container">
             <div class="sub-title u-mb20">エアコン設定</div>
