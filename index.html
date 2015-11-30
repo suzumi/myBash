@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>スマートハウス</title>
+        <title>うちコン</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel='stylesheet' href='/stylesheets/style.css' />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
@@ -39,9 +39,9 @@
 
 			<div class="u-mb20">
 				<h6><i class="fa fa-power-off"></i>現在のエアコンの状態は</h6>
-				<span id="output"><div class="progress"><div class="indeterminate"></div></div></span>
+				<span class="js-state-output"><div class="progress"><div class="indeterminate"></div></div></span>
 			</div>
-            <div class="row">
+            <div class="row u-mb20">
 				<div class="col s6">
 					<a class="waves-effect waves-light btn-large js-aircon-on">電源ON</a>
 				</div>
@@ -72,7 +72,7 @@
 					$('.js-aircon-on').removeClass('disabled');
 				}
 				
-				$('#output').html(state)
+				$('.js-state-output').html(state)
             });
             
             // Publisher
